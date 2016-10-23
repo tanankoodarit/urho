@@ -22,7 +22,7 @@
                  [org.clojure/tools.trace "0.7.8"]
                  [org.clojure/clojure "1.9.0-alpha13"]
                  ]
-  :ring {:handler urho.handler/all-routes
+  :ring {:handler urho.routes.handler/all-routes
          :port    8089
          :reload-paths ["src/"]}
   :resource-paths ["resources/"]

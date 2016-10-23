@@ -1,13 +1,13 @@
-(ns urho.handler
+(ns urho.routes.handler
   (:require [compojure.handler :as handler]
             [ring.middleware.json :as middle]
             [compojure.api.sweet :refer [defapi]]
             [compojure.route :refer [not-found]]
             [ring.middleware.jsonp :refer [wrap-json-with-padding]]
             [compojure.api.core :as compojure-core]
-            [urho.api-routes :refer [api-routes]]
-            [urho.health-route :refer [health-route]]
-            [urho.error-routes :refer [error-routes]]
+            [urho.routes.api-routes :refer [api-routes]]
+            [urho.routes.health-route :refer [health-route]]
+            [urho.routes.error-routes :refer [error-routes]]
             ))
 
 (defn- add-encoding-to-json-response
@@ -29,4 +29,4 @@
           enabled-middleware
           health-route
           api-routes
-          error-routes))
+          ))

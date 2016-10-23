@@ -3,7 +3,7 @@
   (:require [clojure.tools.trace :refer [trace]]
             [clojure.tools.logging :refer [info error]]
             [ring.adapter.jetty :as jetty]
-            [urho.handler :refer [all-routes]]
+            [urho.routes.handler :refer [all-routes]]
             [urho.properties :refer [current-env
                                      print-properties
                                      parse-property

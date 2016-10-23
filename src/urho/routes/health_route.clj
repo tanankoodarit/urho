@@ -1,4 +1,4 @@
-(ns urho.health-route
+(ns urho.routes.health-route
   (:require [urho.properties :refer [current-version]]
             [compojure.api.sweet :refer :all]
             [schema.core :as s]
