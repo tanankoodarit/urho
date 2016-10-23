@@ -24,6 +24,16 @@ To start a web server for the application, run:
     
     lein test
 
+## Run local docker
+
+### Build
+
+    ./build.sh
+
+### Run
+
+    docker run -e urho
+
 ## License
 
 Copyright © 2016 FIXME

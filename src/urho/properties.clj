@@ -4,7 +4,7 @@
   (:require [clojure.string :as str]))
 
 (def properties
-  {:base       {:port 8089                                  ; application port
+  {:base       {:port 8090                                  ; application port
 
                 }
 

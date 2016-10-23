@@ -23,10 +23,11 @@
                  [org.clojure/clojure "1.9.0-alpha13"]
                  ]
   :ring {:handler urho.routes.handler/all-routes
-         :port    8089
+         :port    8090
          :reload-paths ["src/"]}
   :resource-paths ["resources/"]
   :source-paths ["src/"]
+  :uberjar-name "server.jar"
   :profiles
   {:dev {:env          {:environment "dev"}
          :dependencies [[javax.servlet/servlet-api "2.5"]
