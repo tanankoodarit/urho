@@ -5,7 +5,7 @@
 
 (def properties
   {:base       {:port 8090                                  ; application port
-
+                :version "0.0.1"
                 }
 
    :dev        {}
@@ -67,5 +67,5 @@
 
 (def current-version
   (let [version (or (get-env-value :package.version)
-                    (:ovp-program-store-version env))]
+                    (:version env))]
     (str (current-env) " - " version)))

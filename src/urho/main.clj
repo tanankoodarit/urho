@@ -35,7 +35,7 @@
   (let [hook (fn []
                (info "Stopping Urho...")
                (stop-fn)
-               (info "OVP Program Store stopped successfully"))]
+               (info "Urho stopped successfully"))]
     (-> (Runtime/getRuntime)
         (.addShutdownHook (Thread. hook)))))
 
